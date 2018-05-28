@@ -194,7 +194,7 @@ namespace CredentialManagement
 
         public static PSObject Load(string target, CredentialType type = CredentialType.Generic, bool fix = true)
         {
-            PSObject cred = null
+            PSObject cred = null;
             if(fix) {
                 target = FixTarget(target);
             }
